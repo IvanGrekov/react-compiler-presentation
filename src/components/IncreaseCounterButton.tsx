@@ -1,5 +1,3 @@
-import ComponentRenderHighlighter from './ComponentRenderHighlighter';
-
 interface IIncreaseCounterButtonProps {
     handleClick: () => void;
 }
@@ -7,9 +5,5 @@ interface IIncreaseCounterButtonProps {
 export default function IncreaseCounterButton({
     handleClick,
 }: IIncreaseCounterButtonProps): JSX.Element {
-    return (
-        <ComponentRenderHighlighter>
-            <button onClick={handleClick}>increase</button>
-        </ComponentRenderHighlighter>
-    );
+    return <button onClick={handleClick}>increase</button>;
 }
