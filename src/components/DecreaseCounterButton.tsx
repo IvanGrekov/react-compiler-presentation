@@ -1,9 +1,9 @@
 interface IDecreaseCounterButtonProps {
-    handleClick: () => void;
+    onClick: () => void;
 }
 
 export default function DecreaseCounterButton({
-    handleClick,
+    onClick,
 }: IDecreaseCounterButtonProps): JSX.Element {
-    return <button onClick={handleClick}>decrease</button>;
+    return <button onClick={onClick}>decrease</button>;
 }

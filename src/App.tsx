@@ -6,16 +6,24 @@ import CounterLabel from './components/CounterLabel';
 import DecreaseCounterButton from './components/DecreaseCounterButton';
 import Header from './components/Header';
 import IncreaseCounterButton from './components/IncreaseCounterButton';
+import NameField from './components/NameField';
+import UserDetails from './components/UserDetails';
+import { IUser } from './types/user';
 
 function App(): JSX.Element {
     const [count, setCount] = useState(0);
+    const [user, setUser] = useState<IUser>({ name: 'John Doe', age: 25, gender: 'male' });
 
-    const increase = (): void => {
+    const increaseCount = (): void => {
         setCount((count) => count + 1);
     };
 
-    const decrease = (): void => {
+    const decreaseCount = (): void => {
         setCount((count) => count - 1);
+    };
+
+    const changeName = (name: string): void => {
+        setUser((user) => ({ ...user, name }));
     };
 
     return (
@@ -23,11 +31,17 @@ function App(): JSX.Element {
             <Header />
 
             <div className="card">
-                <IncreaseCounterButton handleClick={increase} />
+                <IncreaseCounterButton onClick={increaseCount} />
 
-                <DecreaseCounterButton handleClick={decrease} />
+                <DecreaseCounterButton onClick={decreaseCount} />
 
                 <CounterLabel count={count} />
+            </div>
+
+            <div className="user-card">
+                <NameField name={user.name} onChange={changeName} />
+                is
+                <UserDetails user={user} />
             </div>
         </>
     );
