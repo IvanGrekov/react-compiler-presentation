@@ -1,7 +1,7 @@
 module.exports = {
     root: true,
     env: { browser: true, es2022: true },
-    plugins: ['import', 'react-hooks', 'promise', 'react-refresh'],
+    plugins: ['import', 'react-hooks', 'promise', 'react-refresh', 'react-compiler'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
@@ -33,6 +33,7 @@ module.exports = {
         },
     },
     rules: {
+        "react-compiler/react-compiler": "error",
         'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
         'react/display-name': 'error',
         'no-console':

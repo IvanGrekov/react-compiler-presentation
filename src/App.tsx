@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 
 import CounterLabel from './components/CounterLabel';
+import CtrlButtons from './components/CtrlButtons';
 import DecreaseCounterButton from './components/DecreaseCounterButton';
 import Header from './components/Header';
 import IncreaseCounterButton from './components/IncreaseCounterButton';
@@ -43,6 +44,8 @@ function App(): JSX.Element {
                 is
                 <UserDetails user={user} />
             </div>
+
+            <CtrlButtons />
         </>
     );
 }

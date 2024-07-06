@@ -30,6 +30,7 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 ### Try React Compiler:
+0. https://react.dev/learn/react-compiler
 1. npm create vite@latest
 3. npm install --save-exact react@rc react-dom@rc
 2. npm install -D babel-plugin-react-compiler
