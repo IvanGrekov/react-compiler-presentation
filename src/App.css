@@ -18,11 +18,6 @@
     filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.counter-label {
-    margin: 0;
-    font-size: 3em;
-}
-
 @keyframes logo-spin {
     from {
         transform: rotate(0deg);
@@ -38,13 +33,14 @@
     }
 }
 
-.card,
+.counter-card,
 .user-card,
+.user-list-card,
 .ctrl-buttons {
-    padding: 2em;
+    padding: 4em;
 }
 
-.card {
+.counter-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,12 +49,21 @@
 }
 
 .user-card,
+.user-list-card,
 .ctrl-buttons {
-    padding-top: 0;
     display: flex;
+    gap: 1em;
+    border-top: 1px solid #ccc;
+}
+
+.user-card,
+.ctrl-buttons {
     align-items: center;
     justify-content: center;
-    gap: 1em;
+}
+
+.user-list-card {
+    flex-direction: column;
 }
 
 .read-the-docs {

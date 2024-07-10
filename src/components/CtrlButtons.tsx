@@ -3,6 +3,7 @@ import { useState } from 'react';
 import '../App.css';
 
 import DislikeButton from './DislikeButton';
+// import LaughButton from './LaughButton';
 import LikeButton from './LikeButton';
 
 export default function CtrlButtons(): JSX.Element {
@@ -12,6 +13,7 @@ export default function CtrlButtons(): JSX.Element {
         <div className="ctrl-buttons">
             <LikeButton likeCount={likeCount} setLikeCount={setLikeCount} />
             <DislikeButton />
+            {/* <LaughButton /> */}
         </div>
     );
 }

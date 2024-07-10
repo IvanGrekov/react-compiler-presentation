@@ -8,5 +8,5 @@ export default function NameField({ name, onChange }: INameFieldProps): JSX.Elem
         onChange(e.target.value);
     };
 
-    return <input type="text" value={name} onChange={handleChange} />;
+    return <input type="text" placeholder="Enter Name" value={name} onChange={handleChange} />;
 }

@@ -1,7 +1,11 @@
-export type TGender = 'male' | 'female';
+export enum EGender {
+    Male = 'Male',
+    Female = 'Female',
+}
 
 export interface IUser {
+    id: number;
     name: string;
     age: number;
-    gender: TGender;
+    gender: EGender;
 }

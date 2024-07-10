@@ -1,7 +1,7 @@
-import { TGender } from '../types/user';
+import { EGender } from '../types/user';
 
 interface IGenderLabelProps {
-    gender: TGender;
+    gender: EGender;
 }
 
 export default function GenderLabel({ gender }: IGenderLabelProps): JSX.Element {

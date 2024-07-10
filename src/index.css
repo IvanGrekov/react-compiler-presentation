@@ -61,6 +61,31 @@ button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
+.counter-label {
+    margin: 0;
+    font-size: 3em;
+}
+
+.text {
+    margin: 0;
+    font-size: 2em;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.user-list-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 8px;
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;

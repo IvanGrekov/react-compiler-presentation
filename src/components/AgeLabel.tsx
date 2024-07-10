@@ -5,5 +5,5 @@ interface IAgeLabelProps {
 export default function AgeLabel({ age }: IAgeLabelProps): JSX.Element {
     console.log('AgeLabel rendered');
 
-    return <h2>{age} y.o.</h2>;
+    return <p className="label">{age} y.o.</p>;
 }

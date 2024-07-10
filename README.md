@@ -32,5 +32,20 @@ export default {
 ### Try React Compiler:
 0. https://react.dev/learn/react-compiler
 1. npm create vite@latest
-3. npm install --save-exact react@rc react-dom@rc
-2. npm install -D babel-plugin-react-compiler
+2. npm install --save-exact react@rc react-dom@rc
+3. npm install -D babel-plugin-react-compiler
+4. Check CounterCard
+  4.1 Check how many renders without Compiler
+  4.2 Check how many renders with Compiler
+  4.3 Move `increaseCount` directly to JSX
+4. Check UserCard
+  4.1 issue with UserListItem / memo(UserListItem)
+5. Check eslint error
+6. Check CtrlButtons
+  6.1 Check CtrlButtons without Compiler (issue with ref.counter)
+  6.2 Check CtrlButtons with Compiler
+7. Check LaughButton
+  7.1 Try to disable eslint rule
+  7.2 Check LaughButton without Compiler
+  7.3 Check LaughButton without Compiler
+

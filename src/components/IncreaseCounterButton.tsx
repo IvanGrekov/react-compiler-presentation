@@ -1,5 +1,5 @@
 interface IIncreaseCounterButtonProps {
-    onClick: () => void;
+    onClick: VoidFunction;
 }
 
 export default function IncreaseCounterButton({
