@@ -3,5 +3,5 @@ interface ICounterLabelProps {
 }
 
 export default function CounterLabel({ count }: ICounterLabelProps): JSX.Element {
-    return <h2>{count}</h2>;
+    return <p className="counter-label">{count}</p>;
 }

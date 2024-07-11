@@ -33,13 +33,37 @@
     }
 }
 
-.card {
+.counter-card,
+.user-card,
+.user-list-card,
+.ctrl-buttons {
+    padding: 4em;
+}
+
+.counter-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1em;
-    padding: 2em;
+}
+
+.user-card,
+.user-list-card,
+.ctrl-buttons {
+    display: flex;
+    gap: 1em;
+    border-top: 1px solid #ccc;
+}
+
+.user-card,
+.ctrl-buttons {
+    align-items: center;
+    justify-content: center;
+}
+
+.user-list-card {
+    flex-direction: column;
 }
 
 .read-the-docs {
